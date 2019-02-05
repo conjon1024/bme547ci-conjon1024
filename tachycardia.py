@@ -1,9 +1,10 @@
 # tachycardia.py
 
 def main():
-	tachy_out = is_tachycardic()
+	in_word = input("Enter the word: ")
+	tachy_out = is_tachycardic(in_word)
 
-def is_tachycardic():
+def is_tachycardic(in_word):
 
 	""" User inputs a word and the program returns whether 'tachycardic' is present in the word
 
@@ -11,8 +12,6 @@ def is_tachycardic():
 
 	:return: a boolean value of True or False depending on the presence of the word 'tachycardic' in any form in the input
 	"""
-	in_word = input("Enter the word: ")
-
 	if "tachycardic" in in_word.lower():
 		tachy_out = True
 	else:
