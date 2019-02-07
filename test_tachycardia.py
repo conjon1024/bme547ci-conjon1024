@@ -19,9 +19,8 @@ def test_is_tachycardic_unit():
     ("{!tAcHycArDIC; /", True),  # test leading/trailing punctuation
     ("tachyac", False)  # test misspelled word
 ])
-
-
 def test_is_tachycardic_param(in_word, expected):
     from tachycardia import is_tachycardic
+
     answer = is_tachycardic(in_word)
     assert answer == expected
