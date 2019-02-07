@@ -23,6 +23,5 @@ def test_is_tachycardic_unit():
 
 def test_is_tachycardic_param(in_word, expected):
     from tachycardia import is_tachycardic
-
     answer = is_tachycardic(in_word)
     assert answer == expected
