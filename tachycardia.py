@@ -8,7 +8,7 @@ def main():
 
 def is_tachycardic(in_word):
 
-    """ User inputs a word and the program returns whether 'tachycardic' is present
+    """ User inputs a word and the script returns whether 'tachycardic' is present
 
     :param in_word: a string argument containing a single word
 
