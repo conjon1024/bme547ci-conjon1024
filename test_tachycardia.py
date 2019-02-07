@@ -4,20 +4,20 @@
 import pytest
 
 
-def test_is_tachycardic_unit(): 
+def test_is_tachycardic_unit():
     from tachycardia import is_tachycardic
 
-    result = is_tachycardic('tachycardic') #test lower case
-    assert result == True
+    result = is_tachycardic('tachycardic')  # test lower case
+    assert result is True
 
 
 @pytest.mark.parametrize("in_word, expected", [
-    ("TACHYCARDIC", True), #test upper case
-    ("TaChyCarDIc", True), #test mixed case
-    ("Bradycardic", False), #test different word
-    ("  TachYcaRdic   ", True), #test leading/trailing spaces
-    ("{!tAcHycArDIC; /", True), #test leading/trailing punctuation
-    ("tachyac", False) #test misspelled word
+    ("TACHYCARDIC", True),  # test upper case
+    ("TaChyCarDIc", True),  # test mixed case
+    ("Bradycardic", False),  # test different word
+    ("  TachYcaRdic   ", True),  # test leading/trailing spaces
+    ("{!tAcHycArDIC; /", True),  # test leading/trailing punctuation
+    ("tachyac", False)  # test misspelled word
 ])
 
 
